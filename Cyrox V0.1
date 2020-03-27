@@ -1,0 +1,299 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Cyrox = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Header = Instance.new("TextLabel")
+local FireNation = Instance.new("TextButton")
+local WaterNation = Instance.new("TextButton")
+local EarthNation = Instance.new("TextButton")
+local WaterIsland = Instance.new("TextButton")
+local EarthIsland = Instance.new("TextButton")
+local Desert = Instance.new("TextButton")
+local AirIsland = Instance.new("TextButton")
+local FireIsland = Instance.new("TextButton")
+local ExitButton = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+--Properties:
+
+Cyrox.Name = "Cyrox"
+Cyrox.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = Cyrox
+Main.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Main.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Main.Position = UDim2.new(0.0844514593, 0, 0.719901741, 0)
+Main.Size = UDim2.new(0, 300, 0, 160)
+Main.Visible = false
+Main.Active = true
+Main.Draggable = true
+
+
+Header.Name = "Header"
+Header.Parent = Main
+Header.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Header.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Header.Position = UDim2.new(0, 0, -0.00214996329, 0)
+Header.Size = UDim2.new(0, 300, 0, 28)
+Header.Font = Enum.Font.SourceSans
+Header.Text = "Cyrox V0.1"
+Header.TextColor3 = Color3.fromRGB(255, 0, 0)
+Header.TextSize = 14.000
+
+FireNation.Name = "FireNation"
+FireNation.Parent = Main
+FireNation.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FireNation.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FireNation.BorderSizePixel = 0
+FireNation.Position = UDim2.new(0.0466666706, 0, 0.300000012, 0)
+FireNation.Size = UDim2.new(0, 79, 0, 24)
+FireNation.Font = Enum.Font.SourceSans
+FireNation.Text = "Fire Nation"
+FireNation.TextColor3 = Color3.fromRGB(255, 0, 0)
+FireNation.TextSize = 14.000
+FireNation.MouseButton1Down:connect(function()
+	local FireNation = CFrame.new(4388, 107, -3504)
+	pl.CFrame = FireNation
+end)
+
+WaterNation.Name = "WaterNation"
+WaterNation.Parent = Main
+WaterNation.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+WaterNation.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WaterNation.BorderSizePixel = 0
+WaterNation.Position = UDim2.new(0.370000005, 0, 0.300000012, 0)
+WaterNation.Size = UDim2.new(0, 79, 0, 24)
+WaterNation.Font = Enum.Font.SourceSans
+WaterNation.Text = "Water Nation"
+WaterNation.TextColor3 = Color3.fromRGB(0, 153, 255)
+WaterNation.TextSize = 14.000
+WaterNation.MouseButton1Down:connect(function()
+	local WaterNation = CFrame.new(-1288, 222, -70)
+	pl.CFrame = WaterNation
+end)
+
+
+EarthNation.Name = "EarthNation"
+EarthNation.Parent = Main
+EarthNation.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EarthNation.BorderColor3 = Color3.fromRGB(255, 255, 255)
+EarthNation.BorderSizePixel = 0
+EarthNation.Position = UDim2.new(0.689999998, 0, 0.300000012, 0)
+EarthNation.Size = UDim2.new(0, 79, 0, 24)
+EarthNation.Font = Enum.Font.SourceSans
+EarthNation.Text = "Earth Nation"
+EarthNation.TextColor3 = Color3.fromRGB(17, 255, 0)
+EarthNation.TextSize = 14.000
+EarthNation.MouseButton1Down:connect(function()
+	local EarthNation = CFrame.new(-242, 87, 3257)
+	pl.CFrame = EarthNation
+end)
+
+WaterIsland.Name = "WaterIsland"
+WaterIsland.Parent = Main
+WaterIsland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+WaterIsland.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WaterIsland.BorderSizePixel = 0
+WaterIsland.Position = UDim2.new(0.370000005, 0, 0.487500012, 0)
+WaterIsland.Size = UDim2.new(0, 79, 0, 24)
+WaterIsland.Font = Enum.Font.SourceSans
+WaterIsland.Text = "Water Island"
+WaterIsland.TextColor3 = Color3.fromRGB(0, 153, 255)
+WaterIsland.TextSize = 14.000
+WaterIsland.MouseButton1Down:connect(function()
+	local WaterIsland = CFrame.new(5617, 2.8, 759)
+	pl.CFrame = WaterIsland
+end)
+
+EarthIsland.Name = "EarthIsland"
+EarthIsland.Parent = Main
+EarthIsland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EarthIsland.BorderColor3 = Color3.fromRGB(255, 255, 255)
+EarthIsland.BorderSizePixel = 0
+EarthIsland.Position = UDim2.new(0.689999998, 0, 0.487500012, 0)
+EarthIsland.Size = UDim2.new(0, 79, 0, 24)
+EarthIsland.Font = Enum.Font.SourceSans
+EarthIsland.Text = "Earth Island"
+EarthIsland.TextColor3 = Color3.fromRGB(17, 255, 0)
+EarthIsland.TextSize = 14.000
+EarthIsland.MouseButton1Down:connect(function()
+	local EarthIsland = CFrame.new(990, 71, -3407)
+	pl.CFrame = EarthIsland
+end)
+
+Desert.Name = "Desert"
+Desert.Parent = Main
+Desert.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Desert.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Desert.BorderSizePixel = 0
+Desert.Position = UDim2.new(0.369999975, 0, 0.675000012, 0)
+Desert.Size = UDim2.new(0, 79, 0, 24)
+Desert.Font = Enum.Font.SourceSans
+Desert.Text = "Desert"
+Desert.TextColor3 = Color3.fromRGB(255, 217, 0)
+Desert.TextSize = 14.000
+Desert.MouseButton1Down:connect(function()
+	local Desert = CFrame.new(-2526, 7.9, -3509)
+	pl.CFrame = Desert
+end)
+
+AirIsland.Name = "AirIsland"
+AirIsland.Parent = Main
+AirIsland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AirIsland.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AirIsland.BorderSizePixel = 0
+AirIsland.Position = UDim2.new(0.0466666669, 0, 0.675000012, 0)
+AirIsland.Size = UDim2.new(0, 79, 0, 24)
+AirIsland.Font = Enum.Font.SourceSans
+AirIsland.Text = "AirIsland"
+AirIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
+AirIsland.TextSize = 14.000
+AirIsland.MouseButton1Down:connect(function()
+	local AirNation = CFrame.new(3457, 241, 5076)
+	pl.CFrame = AirNation
+end)
+
+FireIsland.Name = "Fire Island"
+FireIsland.Parent = Main
+FireIsland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FireIsland.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FireIsland.BorderSizePixel = 0
+FireIsland.Position = UDim2.new(0.0466666706, 0, 0.487500012, 0)
+FireIsland.Size = UDim2.new(0, 79, 0, 24)
+FireIsland.Font = Enum.Font.SourceSans
+FireIsland.Text = "Fire Island"
+FireIsland.TextColor3 = Color3.fromRGB(255, 0, 0)
+FireIsland.TextSize = 14.000
+FireIsland.MouseButton1Down:connect(function()
+	local FireIsland = CFrame.new(5524.89, 66.5, -1774)
+	pl.CFrame = FireIsland
+end)
+
+ExitButton.Name = "ExitButton"
+ExitButton.Parent = Main
+ExitButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ExitButton.BorderSizePixel = 0
+ExitButton.Position = UDim2.new(0.899999976, 0, 0, 0)
+ExitButton.Size = UDim2.new(0, 30, 0, 27)
+ExitButton.Font = Enum.Font.SourceSans
+ExitButton.Text = "-"
+ExitButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExitButton.TextSize = 30.000
+ExitButton.MouseButton1Down:connect(function()
+	Main.Visible = false
+	Open.Visible = true
+end)
+
+Fly.Name = "Fly"
+Fly.Parent = Main
+Fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.689999938, 0, 0.675000012, 0)
+Fly.Size = UDim2.new(0, 79, 0, 24)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly (X)"
+Fly.TextColor3 = Color3.fromRGB(255, 217, 0)
+Fly.TextSize = 14.000
+Fly.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/5GWNQ1Ys"),true))()
+end)
+
+Open.Name = "Open"
+Open.Parent = Cyrox
+Open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 2
+Open.Position = UDim2.new(0.787687421, 0, 0.939803481, 0)
+Open.Size = UDim2.new(0, 125, 0, 35)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 25.000
+Open.MouseButton1Down:Connect(function()
+	Main.Visible = true
+	Open.Visible = false
+end)
+
+-- Scripts:
+
+local function XEQJ_fake_script() -- Header.RainbowifyText 
+	local script = Instance.new('LocalScript', Header)
+
+	--//SHADZYDEV//--
+	local r = {
+		Color3.fromRGB(254, 0, 0);		--red
+		Color3.fromRGB(255, 127, 0);	--orange
+		Color3.fromRGB(255, 221, 1);	--yellow
+		Color3.fromRGB(0, 200, 0);		--green
+		Color3.fromRGB(0, 160, 199);	--light blue
+		Color3.fromRGB(0, 55, 230);		--dark blue
+		Color3.fromRGB(129, 16, 210)}	--purple
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.TextColor3 = r[1]
+	i = 1
+	while true do
+	local tween = game:GetService("TweenService"):Create(script.Parent, info, {
+		TextColor3 = r[i]})
+	tween:Play()
+	repeat wait() until tween.Completed
+	wait(0.3)
+	if i == #r then i = 1 else i = i + 1 end
+	end
+end
+coroutine.wrap(XEQJ_fake_script)()
+local function SUIKLZV_fake_script() -- Fly.RainbowifyText 
+	local script = Instance.new('LocalScript', Fly)
+
+	--//SHADZYDEV//--
+	local r = {
+		Color3.fromRGB(254, 0, 0);		--red
+		Color3.fromRGB(255, 127, 0);	--orange
+		Color3.fromRGB(255, 221, 1);	--yellow
+		Color3.fromRGB(0, 200, 0);		--green
+		Color3.fromRGB(0, 160, 199);	--light blue
+		Color3.fromRGB(0, 55, 230);		--dark blue
+		Color3.fromRGB(129, 16, 210)}	--purple
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.TextColor3 = r[1]
+	i = 1
+	while true do
+	local tween = game:GetService("TweenService"):Create(script.Parent, info, {
+		TextColor3 = r[i]})
+	tween:Play()
+	repeat wait() until tween.Completed
+	wait(0.3)
+	if i == #r then i = 1 else i = i + 1 end
+	end
+end
+coroutine.wrap(SUIKLZV_fake_script)()
+local function KIZTCZF_fake_script() -- Open.RainbowifyText 
+	local script = Instance.new('LocalScript', Open)
+
+	--//SHADZYDEV//--
+	local r = {
+		Color3.fromRGB(254, 0, 0);		--red
+		Color3.fromRGB(255, 127, 0);	--orange
+		Color3.fromRGB(255, 221, 1);	--yellow
+		Color3.fromRGB(0, 200, 0);		--green
+		Color3.fromRGB(0, 160, 199);	--light blue
+		Color3.fromRGB(0, 55, 230);		--dark blue
+		Color3.fromRGB(129, 16, 210)}	--purple
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.BorderColor3 = r[1]
+	i = 1
+	while true do
+	local tween = game:GetService("TweenService"):Create(script.Parent, info, {
+		BorderColor3 = r[i]})
+	tween:Play()
+	repeat wait() until tween.Completed
+	wait(0.3)
+	if i == #r then i = 1 else i = i + 1 end
+	end
+end
+coroutine.wrap(KIZTCZF_fake_script)()
