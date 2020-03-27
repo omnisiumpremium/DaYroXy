@@ -17,11 +17,9 @@ local FireIsland = Instance.new("TextButton")
 local ExitButton = Instance.new("TextButton")
 local Fly = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
-local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 
 --Properties:
 
-Cyrox.Parent = game.CoreGui
 Cyrox.Name = "Cyrox"
 Cyrox.Parent = game.CoreGui
 
@@ -34,7 +32,6 @@ Main.Size = UDim2.new(0, 300, 0, 160)
 Main.Visible = false
 Main.Active = true
 Main.Draggable = true
-
 
 Header.Name = "Header"
 Header.Parent = Main
@@ -59,8 +56,7 @@ FireNation.Text = "Fire Nation"
 FireNation.TextColor3 = Color3.fromRGB(255, 0, 0)
 FireNation.TextSize = 14.000
 FireNation.MouseButton1Down:connect(function()
-	local FireNation = CFrame.new(4388, 107, -3504)
-	pl.CFrame = FireNation
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(4388, 107, -3504))
 end)
 
 WaterNation.Name = "WaterNation"
@@ -75,8 +71,7 @@ WaterNation.Text = "Water Nation"
 WaterNation.TextColor3 = Color3.fromRGB(0, 153, 255)
 WaterNation.TextSize = 14.000
 WaterNation.MouseButton1Down:connect(function()
-	local WaterNation = CFrame.new(-1288, 222, -70)
-	pl.CFrame = WaterNation
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1288, 222, -70))
 end)
 
 
@@ -92,8 +87,7 @@ EarthNation.Text = "Earth Nation"
 EarthNation.TextColor3 = Color3.fromRGB(17, 255, 0)
 EarthNation.TextSize = 14.000
 EarthNation.MouseButton1Down:connect(function()
-	local EarthNation = CFrame.new(-242, 87, 3257)
-	pl.CFrame = EarthNation
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-242, 87, 3257))
 end)
 
 WaterIsland.Name = "WaterIsland"
@@ -108,8 +102,7 @@ WaterIsland.Text = "Water Island"
 WaterIsland.TextColor3 = Color3.fromRGB(0, 153, 255)
 WaterIsland.TextSize = 14.000
 WaterIsland.MouseButton1Down:connect(function()
-	local WaterIsland = CFrame.new(5617, 2.8, 759)
-	pl.CFrame = WaterIsland
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(5617, 2.8, 759))
 end)
 
 EarthIsland.Name = "EarthIsland"
@@ -124,8 +117,7 @@ EarthIsland.Text = "Earth Island"
 EarthIsland.TextColor3 = Color3.fromRGB(17, 255, 0)
 EarthIsland.TextSize = 14.000
 EarthIsland.MouseButton1Down:connect(function()
-	local EarthIsland = CFrame.new(990, 71, -3407)
-	pl.CFrame = EarthIsland
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(990, 71, -3407))
 end)
 
 Desert.Name = "Desert"
@@ -140,8 +132,7 @@ Desert.Text = "Desert"
 Desert.TextColor3 = Color3.fromRGB(255, 217, 0)
 Desert.TextSize = 14.000
 Desert.MouseButton1Down:connect(function()
-	local Desert = CFrame.new(-2526, 7.9, -3509)
-	pl.CFrame = Desert
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2526, 7.9, -3509))
 end)
 
 AirIsland.Name = "AirIsland"
@@ -156,8 +147,7 @@ AirIsland.Text = "AirIsland"
 AirIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
 AirIsland.TextSize = 14.000
 AirIsland.MouseButton1Down:connect(function()
-	local AirNation = CFrame.new(3457, 241, 5076)
-	pl.CFrame = AirNation
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(3457, 241, 5076))
 end)
 
 FireIsland.Name = "Fire Island"
@@ -172,8 +162,7 @@ FireIsland.Text = "Fire Island"
 FireIsland.TextColor3 = Color3.fromRGB(255, 0, 0)
 FireIsland.TextSize = 14.000
 FireIsland.MouseButton1Down:connect(function()
-	local FireIsland = CFrame.new(5524.89, 66.5, -1774)
-	pl.CFrame = FireIsland
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(5524.89, 66.5, -1774))
 end)
 
 ExitButton.Name = "ExitButton"
