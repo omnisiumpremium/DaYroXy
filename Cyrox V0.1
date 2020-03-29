@@ -3,217 +3,456 @@
 
 -- Instances:
 
-local Cyrox = Instance.new("ScreenGui")
+local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Header = Instance.new("TextLabel")
-local FireNation = Instance.new("TextButton")
-local WaterNation = Instance.new("TextButton")
-local EarthNation = Instance.new("TextButton")
-local WaterIsland = Instance.new("TextButton")
-local EarthIsland = Instance.new("TextButton")
-local Desert = Instance.new("TextButton")
-local AirIsland = Instance.new("TextButton")
+local MiniMize = Instance.new("TextButton")
+local ButtonTab = Instance.new("Frame")
+local TeleportButton = Instance.new("TextButton")
+local ToolsButton = Instance.new("TextButton")
+local Others = Instance.new("TextButton")
+local TeleportPage = Instance.new("Frame")
+local FireCity = Instance.new("TextButton")
+local WaterCity = Instance.new("TextButton")
+local EarthCity = Instance.new("TextButton")
 local FireIsland = Instance.new("TextButton")
-local ExitButton = Instance.new("TextButton")
+local WaterIsland = Instance.new("TextButton")
+local Kyoshi = Instance.new("TextButton")
+local AirTemple = Instance.new("TextButton")
+local Desert = Instance.new("TextButton")
+local Tools = Instance.new("Frame")
+local Copper = Instance.new("TextButton")
+local Silver = Instance.new("TextButton")
+local GoldPieces = Instance.new("TextButton")
+local Gold = Instance.new("TextButton")
+local Unlimited = Instance.new("TextLabel")
+local LevelUp = Instance.new("TextButton")
+local MaxLevel = Instance.new("TextButton")
+local Soon2 = Instance.new("TextButton")
+local Others_2 = Instance.new("Frame")
 local Fly = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
 local Open = Instance.new("TextButton")
 
 --Properties:
 
-Cyrox.Name = "Cyrox"
-Cyrox.Parent = game.CoreGui
-
+ScreenGui.Parent = game.CoreGui
 Main.Name = "Main"
-Main.Parent = Cyrox
-Main.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-Main.BorderColor3 = Color3.fromRGB(255, 0, 4)
-Main.Position = UDim2.new(0.0844514593, 0, 0.719901741, 0)
-Main.Size = UDim2.new(0, 300, 0, 160)
-Main.Visible = false
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Main.Position = UDim2.new(0.310832024, 0, 0.348894328, 0)
+Main.Size = UDim2.new(0, 482, 0, 246)
 Main.Active = true
 Main.Draggable = true
+Main.Visible = false
 
 Header.Name = "Header"
 Header.Parent = Main
-Header.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Header.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Header.Position = UDim2.new(0, 0, -0.00214996329, 0)
-Header.Size = UDim2.new(0, 300, 0, 28)
+Header.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Header.Position = UDim2.new(0.00249990891, 0, 0, 1)
+Header.Size = UDim2.new(0, 480, 0, 27)
 Header.Font = Enum.Font.SourceSans
-Header.Text = "Cyrox V0.1"
-Header.TextColor3 = Color3.fromRGB(255, 0, 0)
-Header.TextSize = 14.000
+Header.Text = "Cyrox V0.3"
+Header.TextColor3 = Color3.fromRGB(255, 0, 4)
+Header.TextSize = 20.000
 
-FireNation.Name = "FireNation"
-FireNation.Parent = Main
-FireNation.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-FireNation.BorderColor3 = Color3.fromRGB(255, 255, 255)
-FireNation.BorderSizePixel = 0
-FireNation.Position = UDim2.new(0.0466666706, 0, 0.300000012, 0)
-FireNation.Size = UDim2.new(0, 79, 0, 24)
-FireNation.Font = Enum.Font.SourceSans
-FireNation.Text = "Fire Nation"
-FireNation.TextColor3 = Color3.fromRGB(255, 0, 0)
-FireNation.TextSize = 14.000
-FireNation.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(4388, 107, -3504))
-end)
-
-WaterNation.Name = "WaterNation"
-WaterNation.Parent = Main
-WaterNation.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-WaterNation.BorderColor3 = Color3.fromRGB(255, 255, 255)
-WaterNation.BorderSizePixel = 0
-WaterNation.Position = UDim2.new(0.370000005, 0, 0.300000012, 0)
-WaterNation.Size = UDim2.new(0, 79, 0, 24)
-WaterNation.Font = Enum.Font.SourceSans
-WaterNation.Text = "Water Nation"
-WaterNation.TextColor3 = Color3.fromRGB(0, 153, 255)
-WaterNation.TextSize = 14.000
-WaterNation.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1288, 222, -70))
-end)
-
-
-EarthNation.Name = "EarthNation"
-EarthNation.Parent = Main
-EarthNation.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-EarthNation.BorderColor3 = Color3.fromRGB(255, 255, 255)
-EarthNation.BorderSizePixel = 0
-EarthNation.Position = UDim2.new(0.689999998, 0, 0.300000012, 0)
-EarthNation.Size = UDim2.new(0, 79, 0, 24)
-EarthNation.Font = Enum.Font.SourceSans
-EarthNation.Text = "Earth Nation"
-EarthNation.TextColor3 = Color3.fromRGB(17, 255, 0)
-EarthNation.TextSize = 14.000
-EarthNation.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-242, 87, 3257))
-end)
-
-WaterIsland.Name = "WaterIsland"
-WaterIsland.Parent = Main
-WaterIsland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-WaterIsland.BorderColor3 = Color3.fromRGB(255, 255, 255)
-WaterIsland.BorderSizePixel = 0
-WaterIsland.Position = UDim2.new(0.370000005, 0, 0.487500012, 0)
-WaterIsland.Size = UDim2.new(0, 79, 0, 24)
-WaterIsland.Font = Enum.Font.SourceSans
-WaterIsland.Text = "Water Island"
-WaterIsland.TextColor3 = Color3.fromRGB(0, 153, 255)
-WaterIsland.TextSize = 14.000
-WaterIsland.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(5617, 2.8, 759))
-end)
-
-EarthIsland.Name = "EarthIsland"
-EarthIsland.Parent = Main
-EarthIsland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-EarthIsland.BorderColor3 = Color3.fromRGB(255, 255, 255)
-EarthIsland.BorderSizePixel = 0
-EarthIsland.Position = UDim2.new(0.689999998, 0, 0.487500012, 0)
-EarthIsland.Size = UDim2.new(0, 79, 0, 24)
-EarthIsland.Font = Enum.Font.SourceSans
-EarthIsland.Text = "Earth Island"
-EarthIsland.TextColor3 = Color3.fromRGB(17, 255, 0)
-EarthIsland.TextSize = 14.000
-EarthIsland.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(990, 71, -3407))
-end)
-
-Desert.Name = "Desert"
-Desert.Parent = Main
-Desert.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Desert.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Desert.BorderSizePixel = 0
-Desert.Position = UDim2.new(0.369999975, 0, 0.675000012, 0)
-Desert.Size = UDim2.new(0, 79, 0, 24)
-Desert.Font = Enum.Font.SourceSans
-Desert.Text = "Desert"
-Desert.TextColor3 = Color3.fromRGB(255, 217, 0)
-Desert.TextSize = 14.000
-Desert.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2526, 7.9, -3509))
-end)
-
-AirIsland.Name = "AirIsland"
-AirIsland.Parent = Main
-AirIsland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AirIsland.BorderColor3 = Color3.fromRGB(255, 255, 255)
-AirIsland.BorderSizePixel = 0
-AirIsland.Position = UDim2.new(0.0466666669, 0, 0.675000012, 0)
-AirIsland.Size = UDim2.new(0, 79, 0, 24)
-AirIsland.Font = Enum.Font.SourceSans
-AirIsland.Text = "AirIsland"
-AirIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
-AirIsland.TextSize = 14.000
-AirIsland.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(3457, 241, 5076))
-end)
-
-FireIsland.Name = "Fire Island"
-FireIsland.Parent = Main
-FireIsland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-FireIsland.BorderColor3 = Color3.fromRGB(255, 255, 255)
-FireIsland.BorderSizePixel = 0
-FireIsland.Position = UDim2.new(0.0466666706, 0, 0.487500012, 0)
-FireIsland.Size = UDim2.new(0, 79, 0, 24)
-FireIsland.Font = Enum.Font.SourceSans
-FireIsland.Text = "Fire Island"
-FireIsland.TextColor3 = Color3.fromRGB(255, 0, 0)
-FireIsland.TextSize = 14.000
-FireIsland.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(5524.89, 66.5, -1774))
-end)
-
-ExitButton.Name = "ExitButton"
-ExitButton.Parent = Main
-ExitButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ExitButton.BorderSizePixel = 0
-ExitButton.Position = UDim2.new(0.899999976, 0, 0, 0)
-ExitButton.Size = UDim2.new(0, 30, 0, 27)
-ExitButton.Font = Enum.Font.SourceSans
-ExitButton.Text = "-"
-ExitButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ExitButton.TextSize = 30.000
-ExitButton.MouseButton1Down:connect(function()
+MiniMize.Name = "MiniMize"
+MiniMize.Parent = Header
+MiniMize.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+MiniMize.BorderSizePixel = 0
+MiniMize.Position = UDim2.new(0.930823028, 0, 0, 0)
+MiniMize.Size = UDim2.new(0, 31, 0, 27)
+MiniMize.Font = Enum.Font.SourceSans
+MiniMize.Text = "-"
+MiniMize.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiniMize.TextSize = 30.000
+MiniMize.MouseButton1Down:connect(function()
 	Main.Visible = false
 	Open.Visible = true
 end)
 
+ButtonTab.Name = "ButtonTab"
+ButtonTab.Parent = Main
+ButtonTab.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ButtonTab.BorderColor3 = Color3.fromRGB(255, 0, 4)
+ButtonTab.Position = UDim2.new(0, 2, 0.113821141, 0)
+ButtonTab.Size = UDim2.new(0, 478, 0, 22)
+
+TeleportButton.Name = "TeleportButton"
+TeleportButton.Parent = ButtonTab
+TeleportButton.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TeleportButton.BorderColor3 = Color3.fromRGB(47, 47, 47)
+TeleportButton.BorderSizePixel = 0
+TeleportButton.Position = UDim2.new(0.0207468774, 0, 0, 0)
+TeleportButton.Size = UDim2.new(0, 107, 0, 21)
+TeleportButton.Font = Enum.Font.SourceSans
+TeleportButton.Text = "Teleport"
+TeleportButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportButton.TextSize = 14.000
+
+ToolsButton.Name = "ToolsButton"
+ToolsButton.Parent = ButtonTab
+ToolsButton.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+ToolsButton.BorderColor3 = Color3.fromRGB(47, 47, 47)
+ToolsButton.BorderSizePixel = 0
+ToolsButton.Position = UDim2.new(0.388730258, 0, 0, 0)
+ToolsButton.Size = UDim2.new(0, 107, 0, 21)
+ToolsButton.Font = Enum.Font.SourceSans
+ToolsButton.Text = "Tools"
+ToolsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToolsButton.TextSize = 14.000
+
+Others.Name = "Others"
+Others.Parent = ButtonTab
+Others.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Others.BorderColor3 = Color3.fromRGB(47, 47, 47)
+Others.BorderSizePixel = 0
+Others.Position = UDim2.new(0.758792579, 0, 0, 0)
+Others.Size = UDim2.new(0, 107, 0, 21)
+Others.Font = Enum.Font.SourceSans
+Others.Text = "Others"
+Others.TextColor3 = Color3.fromRGB(255, 255, 255)
+Others.TextSize = 14.000
+
+TeleportPage.Name = "TeleportPage"
+TeleportPage.Parent = Main
+TeleportPage.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TeleportPage.Position = UDim2.new(0.020785708, 0, 0.247967482, 0)
+TeleportPage.Size = UDim2.new(0, 462, 0, 173)
+TeleportPage.Visible = false
+
+FireCity.Name = "FireCity"
+FireCity.Parent = TeleportPage
+FireCity.BackgroundColor3 = Color3.fromRGB(189, 0, 0)
+FireCity.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FireCity.Position = UDim2.new(0.0259740259, 0, 0.10404624, 0)
+FireCity.Size = UDim2.new(0, 117, 0, 29)
+FireCity.Font = Enum.Font.Arial
+FireCity.Text = "Fire City"
+FireCity.TextColor3 = Color3.fromRGB(255, 255, 255)
+FireCity.TextSize = 20.000
+
+WaterCity.Name = "WaterCity"
+WaterCity.Parent = TeleportPage
+WaterCity.BackgroundColor3 = Color3.fromRGB(0, 25, 255)
+WaterCity.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WaterCity.Position = UDim2.new(0.370129883, 0, 0.10404624, 0)
+WaterCity.Size = UDim2.new(0, 117, 0, 29)
+WaterCity.Font = Enum.Font.Arial
+WaterCity.Text = "Southern"
+WaterCity.TextColor3 = Color3.fromRGB(255, 255, 255)
+WaterCity.TextSize = 20.000
+
+EarthCity.Name = "EarthCity"
+EarthCity.Parent = TeleportPage
+EarthCity.BackgroundColor3 = Color3.fromRGB(3, 181, 0)
+EarthCity.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EarthCity.Position = UDim2.new(0.709956706, 0, 0.10404624, 0)
+EarthCity.Size = UDim2.new(0, 117, 0, 29)
+EarthCity.Font = Enum.Font.Arial
+EarthCity.Text = "Earth City"
+EarthCity.TextColor3 = Color3.fromRGB(255, 255, 255)
+EarthCity.TextSize = 20.000
+
+FireIsland.Name = "FireIsland"
+FireIsland.Parent = TeleportPage
+FireIsland.BackgroundColor3 = Color3.fromRGB(189, 0, 0)
+FireIsland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FireIsland.Position = UDim2.new(0.0259740259, 0, 0.416101724, 0)
+FireIsland.Size = UDim2.new(0, 117, 0, 29)
+FireIsland.Font = Enum.Font.Arial
+FireIsland.Text = "Fire Island"
+FireIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
+FireIsland.TextSize = 20.000
+
+WaterIsland.Name = "WaterIsland"
+WaterIsland.Parent = TeleportPage
+WaterIsland.BackgroundColor3 = Color3.fromRGB(0, 25, 255)
+WaterIsland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WaterIsland.Position = UDim2.new(0.370129883, 0, 0.416101724, 0)
+WaterIsland.Size = UDim2.new(0, 117, 0, 29)
+WaterIsland.Font = Enum.Font.Arial
+WaterIsland.Text = "Northern"
+WaterIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
+WaterIsland.TextSize = 20.000
+
+Kyoshi.Name = "Kyoshi"
+Kyoshi.Parent = TeleportPage
+Kyoshi.BackgroundColor3 = Color3.fromRGB(3, 181, 0)
+Kyoshi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Kyoshi.Position = UDim2.new(0.709956706, 0, 0.416101724, 0)
+Kyoshi.Size = UDim2.new(0, 117, 0, 29)
+Kyoshi.Font = Enum.Font.Arial
+Kyoshi.Text = "Kyoshi Island"
+Kyoshi.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kyoshi.TextSize = 19.000
+
+AirTemple.Name = "AirTemple"
+AirTemple.Parent = TeleportPage
+AirTemple.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AirTemple.BorderSizePixel = 0
+AirTemple.Position = UDim2.new(0.127705619, 0, 0.728157163, 0)
+AirTemple.Size = UDim2.new(0, 117, 0, 29)
+AirTemple.Font = Enum.Font.Arial
+AirTemple.Text = "Air Temple"
+AirTemple.TextColor3 = Color3.fromRGB(0, 0, 0)
+AirTemple.TextSize = 20.000
+
+Desert.Name = "Desert"
+Desert.Parent = TeleportPage
+Desert.BackgroundColor3 = Color3.fromRGB(255, 131, 42)
+Desert.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Desert.Position = UDim2.new(0.612554073, 0, 0.728157163, 0)
+Desert.Size = UDim2.new(0, 117, 0, 29)
+Desert.Font = Enum.Font.Arial
+Desert.Text = "Desert"
+Desert.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desert.TextSize = 20.000
+
+Tools.Name = "Tools"
+Tools.Parent = Main
+Tools.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Tools.Position = UDim2.new(0.020785708, 0, 0.247967482, 0)
+Tools.Size = UDim2.new(0, 462, 0, 173)
+Tools.Visible = false
+
+Copper.Name = "Copper"
+Copper.Parent = Tools
+Copper.BackgroundColor3 = Color3.fromRGB(171, 93, 37)
+Copper.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Copper.BorderSizePixel = 0
+Copper.Position = UDim2.new(0.230802402, 0, 0.0805958882, 0)
+Copper.Size = UDim2.new(0, 117, 0, 29)
+Copper.Font = Enum.Font.Arial
+Copper.Text = "Copper Pieces"
+Copper.TextColor3 = Color3.fromRGB(255, 255, 255)
+Copper.TextSize = 17.000
+
+Silver.Name = "Silver"
+Silver.Parent = Tools
+Silver.BackgroundColor3 = Color3.fromRGB(143, 143, 143)
+Silver.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Silver.BorderSizePixel = 0
+Silver.Position = UDim2.new(0.230802402, 0, 0.288688391, 0)
+Silver.Size = UDim2.new(0, 117, 0, 29)
+Silver.Font = Enum.Font.Arial
+Silver.Text = "Silver Pieces"
+Silver.TextColor3 = Color3.fromRGB(255, 255, 255)
+Silver.TextSize = 17.000
+
+GoldPieces.Name = "GoldPieces"
+GoldPieces.Parent = Tools
+GoldPieces.BackgroundColor3 = Color3.fromRGB(189, 191, 45)
+GoldPieces.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GoldPieces.BorderSizePixel = 0
+GoldPieces.Position = UDim2.new(0.230802402, 0, 0.51412189, 0)
+GoldPieces.Size = UDim2.new(0, 117, 0, 29)
+GoldPieces.Font = Enum.Font.Arial
+GoldPieces.Text = "Gold Pieces"
+GoldPieces.TextColor3 = Color3.fromRGB(255, 255, 255)
+GoldPieces.TextSize = 17.000
+
+Gold.Name = "Gold"
+Gold.Parent = Tools
+Gold.BackgroundColor3 = Color3.fromRGB(255, 238, 0)
+Gold.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gold.BorderSizePixel = 0
+Gold.Position = UDim2.new(0.230802402, 0, 0.751116037, 0)
+Gold.Size = UDim2.new(0, 117, 0, 29)
+Gold.Font = Enum.Font.Arial
+Gold.Text = "Gold Ingot"
+Gold.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gold.TextSize = 17.000
+
+Unlimited.Name = "Unlimited"
+Unlimited.Parent = Tools
+Unlimited.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Unlimited.BorderSizePixel = 0
+Unlimited.Position = UDim2.new(0.0234209895, 0, 0.416184962, 0)
+Unlimited.Size = UDim2.new(0, 84, 0, 29)
+Unlimited.Font = Enum.Font.SourceSans
+Unlimited.Text = "Unlimited :"
+Unlimited.TextColor3 = Color3.fromRGB(255, 255, 255)
+Unlimited.TextSize = 20.000
+
+LevelUp.Name = "LevelUp"
+LevelUp.Parent = Tools
+LevelUp.BackgroundColor3 = Color3.fromRGB(103, 202, 255)
+LevelUp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LevelUp.BorderSizePixel = 0
+LevelUp.Position = UDim2.new(0.63772881, 0, 0.150000006, 0)
+LevelUp.Size = UDim2.new(0, 117, 0, 29)
+LevelUp.Font = Enum.Font.Arial
+LevelUp.Text = "Level Up"
+LevelUp.TextColor3 = Color3.fromRGB(0, 0, 0)
+LevelUp.TextSize = 17.000
+
+MaxLevel.Name = "MaxLevel"
+MaxLevel.Parent = Tools
+MaxLevel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+MaxLevel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MaxLevel.Position = UDim2.new(0.63772881, 0, 0.381213874, 0)
+MaxLevel.Size = UDim2.new(0, 117, 0, 29)
+MaxLevel.Font = Enum.Font.Arial
+MaxLevel.Text = "Max Level"
+MaxLevel.TextColor3 = Color3.fromRGB(255, 255, 255)
+MaxLevel.TextSize = 17.000
+
+Soon2.Name = "Soon2"
+Soon2.Parent = Tools
+Soon2.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Soon2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Soon2.Position = UDim2.new(0.63772881, 0, 0.583526015, 0)
+Soon2.Size = UDim2.new(0, 117, 0, 29)
+Soon2.Font = Enum.Font.Arial
+Soon2.Text = "Coming Soon"
+Soon2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon2.TextSize = 17.000
+
+Others_2.Name = "Others"
+Others_2.Parent = Main
+Others_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Others_2.Position = UDim2.new(0.020785708, 0, 0.247967482, 0)
+Others_2.Size = UDim2.new(0, 462, 0, 173)
+Others_2.Visible = false
+
 Fly.Name = "Fly"
-Fly.Parent = Main
-Fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Fly.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Fly.BorderSizePixel = 0
-Fly.Position = UDim2.new(0.689999938, 0, 0.675000012, 0)
-Fly.Size = UDim2.new(0, 79, 0, 24)
-Fly.Font = Enum.Font.SourceSans
+Fly.Parent = Others_2
+Fly.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Fly.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Fly.Position = UDim2.new(0.326040566, 0, 0.363832861, 0)
+Fly.Size = UDim2.new(0, 158, 0, 47)
+Fly.Font = Enum.Font.Arial
 Fly.Text = "Fly (X)"
-Fly.TextColor3 = Color3.fromRGB(255, 217, 0)
-Fly.TextSize = 14.000
-Fly.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(("https://pastebin.com/raw/5GWNQ1Ys"),true))()
-end)
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 25.000
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.0643153563, 0, 0.402438998, 0)
+Credits.Size = UDim2.new(0, 417, 0, 95)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Made By : DaYroXy"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 45.000
 
 Open.Name = "Open"
-Open.Parent = Cyrox
+Open.Parent = ScreenGui
 Open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Open.BorderSizePixel = 2
-Open.Position = UDim2.new(0.787687421, 0, 0.939803481, 0)
-Open.Size = UDim2.new(0, 125, 0, 35)
-Open.Font = Enum.Font.SourceSans
+Open.Position = UDim2.new(0.689167976, 0, 0.898034334, 0)
+Open.Size = UDim2.new(0, 127, 0, 32)
+Open.Font = Enum.Font.Arial
 Open.Text = "Open"
 Open.TextColor3 = Color3.fromRGB(255, 255, 255)
-Open.TextSize = 25.000
-Open.MouseButton1Down:Connect(function()
+Open.TextSize = 22.000
+Open.MouseButton1Down:connect(function()
 	Main.Visible = true
 	Open.Visible = false
 end)
 
 -- Scripts:
+local oldFunc
+oldFunc = hookfunction(Instance.new("Player").Kick, function(self, ...)
+    return wait(9e99)
+end)
+ 
+--metamethod stuff:
+local mt = getrawmetatable(game)
+local old = mt.__namecall
+ 
+setreadonly(mt, false)
+ 
+mt.__namecall = newcclosure(function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+    if method:lower() == "kick" then
+        return wait(9e99)
+    end
+    return old(self, unpack(args))
+end)
 
-local function XEQJ_fake_script() -- Header.RainbowifyText 
+local function KXRPEM_fake_script() -- Header.RainbowifyText 
 	local script = Instance.new('LocalScript', Header)
+	
+FireCity.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(4388, 107, -3504))
+end)
+
+FireIsland.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(5524.89, 66.5, -1774))
+end)
+	
+WaterCity.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1288, 222, -70))
+end)
+
+WaterIsland.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(5617, 2.8, 759))
+end)
+
+EarthCity.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-242, 87, 3257))
+end)
+
+Kyoshi.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(990, 71, -3407))
+end)
+
+AirTemple.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(3457, 241, 5076))
+end)
+
+Desert.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2526, 7.9, -3509))
+end)
+
+Fly.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/5GWNQ1Ys"),true))()
+end)
+
+Copper.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerScripts.BF:Invoke(1585488256, 8)
+	game.ReplicatedStorage.NetworkFolder.IncrementData:InvokeServer(1585488256, {{{"Stats", "Experience"}, 0}, {{"Stats", "Money1"}, 9999999}})
+end)
+	
+Silver.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerScripts.BF:Invoke(1585488256, 8)
+	game.ReplicatedStorage.NetworkFolder.IncrementData:InvokeServer(1585488256, {{{"Stats", "Experience"}, 0}, {{"Stats", "Money2"}, 9999999}})
+end)
+	
+GoldPieces.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerScripts.BF:Invoke(1585488256, 8)
+	game.ReplicatedStorage.NetworkFolder.IncrementData:InvokeServer(1585488256, {{{"Stats", "Experience"}, 0}, {{"Stats", "Money3"}, 9999999}})
+end)
+
+Gold.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerScripts.BF:Invoke(1585488256, 8)
+	game.ReplicatedStorage.NetworkFolder.IncrementData:InvokeServer(1585488256, {{{"Stats", "Experience"}, 0}, {{"Stats", "Money4"}, 9999999}})
+end)
+
+LevelUp.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerScripts.BF:Invoke(1585488256, 8)
+	game.ReplicatedStorage.NetworkFolder.IncrementData:InvokeServer(1585488256, {{{"Stats", "Experience"}, 100000}, {{"Stats", "Money4"}, 0}})
+end)
+
+MaxLevel.MouseButton1Down:connect(function()
+	local Level = 1
+	
+	repeat
+	game.Players.LocalPlayer.PlayerScripts.BF:Invoke(1585488256, 8)
+	game.ReplicatedStorage.NetworkFolder.IncrementData:InvokeServer(1585488256, {{{"Stats", "Experience"}, 100000}, {{"Stats", "Money4"}, 0}})
+		wait(1)
+		Level = Level + 1
+		print("****************************")
+		print("Current Level: " .. Level)
+		print("****************************")
+	until Level == 350
+	 
+	print("Max Level Reached!")	
+end)
 
 	--//SHADZYDEV//--
 	local r = {
@@ -232,12 +471,62 @@ local function XEQJ_fake_script() -- Header.RainbowifyText
 		TextColor3 = r[i]})
 	tween:Play()
 	repeat wait() until tween.Completed
-	wait(0.3)
+	wait(0.1)
 	if i == #r then i = 1 else i = i + 1 end
 	end
 end
-coroutine.wrap(XEQJ_fake_script)()
-local function SUIKLZV_fake_script() -- Fly.RainbowifyText 
+coroutine.wrap(KXRPEM_fake_script)()
+local function IWFW_fake_script() -- Main.RainbowifyText 
+	local script = Instance.new('LocalScript', Main)
+
+	--//SHADZYDEV//--
+	local r = {
+		Color3.fromRGB(254, 0, 0);		--red
+		Color3.fromRGB(255, 127, 0);	--orange
+		Color3.fromRGB(255, 221, 1);	--yellow
+		Color3.fromRGB(0, 200, 0);		--green
+		Color3.fromRGB(0, 160, 199);	--light blue
+		Color3.fromRGB(0, 55, 230);		--dark blue
+		Color3.fromRGB(129, 16, 210)}	--purple
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.BorderColor3 = r[1]
+	i = 1
+	while true do
+	local tween = game:GetService("TweenService"):Create(script.Parent, info, {
+		BorderColor3 = r[i]})
+	tween:Play()
+	repeat wait() until tween.Completed
+	wait(0.1)
+	if i == #r then i = 1 else i = i + 1 end
+	end
+end
+coroutine.wrap(IWFW_fake_script)()
+local function UHKCXN_fake_script() -- Fly.RainbowifyText 
+	local script = Instance.new('LocalScript', Fly)
+
+	--//SHADZYDEV//--
+	local r = {
+		Color3.fromRGB(254, 0, 0);		--red
+		Color3.fromRGB(255, 127, 0);	--orange
+		Color3.fromRGB(255, 221, 1);	--yellow
+		Color3.fromRGB(0, 200, 0);		--green
+		Color3.fromRGB(0, 160, 199);	--light blue
+		Color3.fromRGB(0, 55, 230);		--dark blue
+		Color3.fromRGB(129, 16, 210)}	--purple
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.BorderColor3 = r[1]
+	i = 1
+	while true do
+	local tween = game:GetService("TweenService"):Create(script.Parent, info, {
+		BorderColor3 = r[i]})
+	tween:Play()
+	repeat wait() until tween.Completed
+	wait(0.1)
+	if i == #r then i = 1 else i = i + 1 end
+	end
+end
+coroutine.wrap(UHKCXN_fake_script)()
+local function WLWXQ_fake_script() -- Fly.RainbowifyText 
 	local script = Instance.new('LocalScript', Fly)
 
 	--//SHADZYDEV//--
@@ -257,12 +546,100 @@ local function SUIKLZV_fake_script() -- Fly.RainbowifyText
 		TextColor3 = r[i]})
 	tween:Play()
 	repeat wait() until tween.Completed
-	wait(0.3)
+	wait(0.1)
 	if i == #r then i = 1 else i = i + 1 end
 	end
 end
-coroutine.wrap(SUIKLZV_fake_script)()
-local function KIZTCZF_fake_script() -- Open.RainbowifyText 
+coroutine.wrap(WLWXQ_fake_script)()
+local function IRZEV_fake_script() -- Main.Script 
+	local script = Instance.new('Script', Main)
+
+	local OthersButton = script.Parent.ButtonTab.Others
+	local ToolsButton = script.Parent.ButtonTab.ToolsButton
+	local TpButton = script.Parent.ButtonTab.TeleportButton
+	local Teleport = script.Parent.TeleportPage
+	local Tools = script.Parent.Tools
+	local Others = script.Parent.Others
+	local Credits = script.Parent.Credits
+	local Enabled = false
+	
+	TpButton.MouseButton1Click:Connect(function()
+		if Enabled == false then
+			Enabled = true
+			Teleport.Visible = true
+			Tools.Visible = false
+			Others.Visible = false
+			Credits.Visible = false
+		else
+			Enabled = false
+			Teleport.Visible = true
+			Tools.Visible = false
+			Others.Visible = false
+			Credits.Visible = false
+		end
+	end)
+	
+	ToolsButton.MouseButton1Click:Connect(function()
+		if Enabled == false then
+			Enabled = true
+			Teleport.Visible = false
+			Tools.Visible = true
+			Others.Visible = false
+			Credits.Visible = false
+			
+		else
+			Enabled = false
+			Teleport.Visible = false
+			Tools.Visible = true
+			Others.Visible = false
+			Credits.Visible = false
+		end
+	end)
+	
+	OthersButton.MouseButton1Click:Connect(function()
+		if Enabled == false then
+			Enabled = true
+			Teleport.Visible = false
+			Tools.Visible = false
+			Others.Visible = true
+			Credits.Visible = false
+			
+		else
+			Enabled = false
+			Teleport.Visible = false
+			Tools.Visible = true
+			Others.Visible = true
+			Credits.Visible = false
+		end
+	end)
+end
+coroutine.wrap(IRZEV_fake_script)()
+local function OJJBH_fake_script() -- Credits.RainbowifyText 
+	local script = Instance.new('LocalScript', Credits)
+
+	--//SHADZYDEV//--
+	local r = {
+		Color3.fromRGB(254, 0, 0);		--red
+		Color3.fromRGB(255, 127, 0);	--orange
+		Color3.fromRGB(255, 221, 1);	--yellow
+		Color3.fromRGB(0, 200, 0);		--green
+		Color3.fromRGB(0, 160, 199);	--light blue
+		Color3.fromRGB(0, 55, 230);		--dark blue
+		Color3.fromRGB(129, 16, 210)}	--purple
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.TextColor3 = r[1]
+	i = 1
+	while true do
+	local tween = game:GetService("TweenService"):Create(script.Parent, info, {
+		TextColor3 = r[i]})
+	tween:Play()
+	repeat wait() until tween.Completed
+	wait(0.1)
+	if i == #r then i = 1 else i = i + 1 end
+	end
+end
+coroutine.wrap(OJJBH_fake_script)()
+local function RSQCNTI_fake_script() -- Open.RainbowifyText 
 	local script = Instance.new('LocalScript', Open)
 
 	--//SHADZYDEV//--
@@ -282,8 +659,8 @@ local function KIZTCZF_fake_script() -- Open.RainbowifyText
 		BorderColor3 = r[i]})
 	tween:Play()
 	repeat wait() until tween.Completed
-	wait(0.3)
+	wait(0.1)
 	if i == #r then i = 1 else i = i + 1 end
 	end
 end
-coroutine.wrap(KIZTCZF_fake_script)()
+coroutine.wrap(RSQCNTI_fake_script)()
