@@ -1,7 +1,1 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/nqWjziN9", true))()
-
-if PaidAccess == true then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/DaYroXy/DaYroXy/master/CyroxPaid", true))()
-else
-	warn("NOT WHITELISTED")
-end
+h
